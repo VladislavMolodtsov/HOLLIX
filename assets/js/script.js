@@ -24,3 +24,26 @@ const toggleNavbar = function () {
 }
 
 addEventOnElem(navToggler, "click", toggleNavbar);
+
+/* Close navbar when click on any navbar links */
+
+const navLinks = document.querySelectorAll("[data-nav-link]");
+
+const closeNavbar = function() {
+    navbar.classList.remove("active");
+    overlay.classList.remove("active");
+}
+
+addEventOnElem(navLinks, "click", closeNavbar);
+
+/* Header active when scroll down */
+
+const header = document.querySelector("[data-header]");
+
+const headerActive = function() {
+    window.scrollY > 100 ?
+        header.classList.add("active") :
+        header.classList.remove("active");
+}
+
+addEventOnElem(window, "scroll", headerActive);
