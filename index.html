@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
 
     <!-- goggle font link -->
-
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -22,6 +21,8 @@
     />
 
     <!-- preload images -->
+    <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+
   </head>
   <body>
     <!-- HEADER -->
@@ -81,7 +82,51 @@
       </div>
     </header>
 
-    <!-- MAIN -->
+    <main>
+      <article>
+
+        <!-- Hero -->
+
+        <section class="section hero" id="home" aria-label="hero">
+          
+          <div class="container">
+
+            <div class="hero-content">
+
+              <p class="hero-subtitle has-before">Welcome to Our Agency</p>
+              <h1 class="h1 hero-title">Smart Ideas for your Brand are Here</h1>
+              <p class="hero-text">
+                Donec tincidunt lacinia diam, eu volutpat est sollicitudin at. Vestibulum ut mi tristi que, vulputate ante quis, tempus enim. Proin quis euismod purus. Suspen disse efficitur aliquam
+                 enim sed consequat vulputate ante quis.
+              </p>
+              <div class="btn-group">
+
+                <a href="#" class="btn btn-primary">Discover More</a>
+                <button class="flex-btn">
+
+                  <div class="btn-icon">
+
+                    <ion-icon name="play" aria-hidden="true"></ion-icon>
+
+                  </div>
+                  <span class="span">How it works</span>
+
+                </button>
+              </div>
+
+            </div>
+            <figure class="hero-banner has-before img-holder"
+                    style="--width: 650; --height: 650">
+
+              <img src="./assets/images/hero-banner.png" alt="hero banner" class="img-cover" width="650" height="650">
+
+            </figure>
+
+          </div>
+        </section>
+
+      </article>
+    </main>
 
       
 
